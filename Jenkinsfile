@@ -42,7 +42,7 @@ pipeline {
             emailext(
                 subject: "Pipeline Successful",
                 body: "The Jenkins pipeline completed successfully.",
-                to: 'muyaseerhussain5555@gmail.com',
+                to: 'syedanfas786@gmail.com',
                 attachLog: true
                 // attachmentsPattern: '**/console-log.txt'
             )
@@ -51,7 +51,7 @@ pipeline {
             emailext(
                 subject: "Pipeline Failed",
                 body: "The Jenkins pipeline failed. Please check the logs for details.",
-                to: 'muyaseerhussain5555@gmail.com',
+                to: 'syedanfas786@gmail.com',
                 attachLog: true
                 // attachmentsPattern: '**/console-log.txt'
             )
