@@ -17,12 +17,17 @@ pipeline {
                 success {
                     mail to: "syedanfas786@gmail.com",
                     subject: "Test status success",
-                    body: "Test was success"
+                    body: "Test was success",
+                    attachLog: true
+                    // attachmentsPattern: '**/console-log.txt'
                 }
                 failure {
                     mail to: "syedanfas786@gmail.com",
                     subject: "Test status failure",
-                    body: "Test was failure"
+                    body: "Test was failure",
+                    attachLog: true
+                     // attachmentsPattern: '**/console-log.txt'
+        
                 }
             }
         }
@@ -41,12 +46,16 @@ pipeline {
                 success {
                     mail to: "syedanfas786@gmail.com",
                     subject: "Security scan status success",
-                    body: "Security scan was success"
+                    body: "Security scan was success",
+                    attachLog: true
+                    // attachmentsPattern: '**/console-log.txt'
                 }
                 failure {
                     mail to: "syedanfas786@gmail.com",
                     subject: "Security scan status failure",
-                    body: "Security scan was failure"
+                    body: "Security scan was failure",
+                    attachLog: true
+                    // attachmentsPattern: '**/console-log.txt'
                 }
             }
         }
